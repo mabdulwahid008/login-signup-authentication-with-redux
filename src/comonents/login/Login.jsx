@@ -100,12 +100,12 @@ function Login() {
   return (
     <div className='banner'>
         <div className='banner_right'>
-            <h1>Find yourself best assistant for your problem</h1>
+            <h1>Login and Sign up authentication with redux</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis similique quae officia doloremque distinctio, tempora rem illo tempore nesciunt, fugiat quisquam minus vitae iusto minima quod, id neque hic voluptatum.</p>
             <button className='btn btn-login'onClick={()=>{setFormState(3)}}>Create Your Account</button>
         </div>
         <div className='banner_left'>
-           <img className='img' src={banner} style={{width:400, height:500}}/>
+           <img className='img' src={banner}/>
 
            {/* Login */}
            {formState === 1 && <motion.div initial={{opacity:0, transform:'scale(0.7)'}} animate={{opacity:1, transform:'scale(1)', transition:{duration:.2}}}>
